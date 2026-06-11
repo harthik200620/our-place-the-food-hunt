@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Place — The Food Hunt · Open-Air Andhra Dining in Vijayawada (Tadepalli)</title>
+<meta name="description" content="Our Place – The Food Hunt: Vijayawada's open-air village retreat for Andhra feasts. Thatched-hut cabanas, fairy-lit nights, dum biryanis & natu kodi. Ashramam Road, Tadepalli. Book on WhatsApp.">
+<meta name="theme-color" content="#FAF6EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2322372A'/%3E%3Ccircle cx='50' cy='50' r='46' fill='none' stroke='%23BE754A' stroke-width='3'/%3E%3Ctext x='50' y='63' text-anchor='middle' font-family='Georgia,serif' font-size='36' font-weight='600' fill='%23E9C77E'%3EOP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF6EE; --paper2:#F3EBDC; --paper3:#EDE2CC; --card:#FFFEFB; --line:#E6DAC4; --line2:#D9C8A8;
+  --ink:#262017; --muted:#6F6354; --faint:#9C9080;
+  --copper:#BE754A; --copper-deep:#8C4F2B; --copper-soft:#E9CDB4;
+  --green:#2E4631; --green-deep:#22372A; --green-ink:#1B2C21;
+  --cream:#F8F3E6; --gold2:#E9C77E;
+  --veg:#3FA060; --nonveg:#C44536;
+  --serif:"Fraunces",Georgia,serif; --sans:"Poppins",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);font-weight:600}
+h2.sec{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.12;margin:10px 0 14px;color:var(--green-ink)}
+.sec em{font-style:italic;color:var(--copper)}
+.lede{color:var(--muted);max-width:660px;font-size:16px}
+section{padding:88px 0;position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+html.noanim .reveal{opacity:1!important;transform:none!important;transition:none!important}
+html.noanim,html.noanim *{animation:none!important;scroll-behavior:auto!important}
+html.flat .hero{min-height:880px}
+html.flat .bigcta{background-attachment:scroll}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s ease,box-shadow .35s ease;padding:18px 0}
+nav.scrolled{background:rgba(250,246,238,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(190,117,74,.22),0 8px 30px rgba(38,32,23,.06);padding:12px 0}
+.navrow{display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:44px;height:44px;flex:0 0 auto}
+.brand .nm{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.02em;line-height:1.05;color:var(--cream);transition:color .3s}
+.brand .sub{font-size:9px;letter-spacing:.3em;color:var(--gold2);font-weight:600;text-transform:uppercase;transition:color .3s}
+nav.scrolled .brand .nm{color:var(--green-ink)}
+nav.scrolled .brand .sub{color:var(--copper)}
+.navlinks{display:flex;gap:26px;margin-left:auto;align-items:center}
+.navlinks a{font-size:13px;font-weight:500;color:var(--cream);letter-spacing:.05em;transition:color .25s;text-shadow:0 1px 12px rgba(0,0,0,.3)}
+nav.scrolled .navlinks a{color:var(--muted);text-shadow:none}
+.navlinks a:hover{color:var(--copper)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--green);color:var(--cream);font-weight:600;font-size:13.5px;padding:13px 26px;border-radius:999px;letter-spacing:.04em;transition:transform .25s,box-shadow .25s,background .25s;border:none;cursor:pointer;text-shadow:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,55,42,.28);background:var(--green-deep)}
+.btn.copper{background:var(--copper);color:#FFF8EE}
+.btn.copper:hover{background:#A9633B;box-shadow:0 12px 28px rgba(190,117,74,.32)}
+.btn.ghost{background:transparent;color:var(--cream);border:1.5px solid rgba(248,243,230,.55)}
+.btn.ghost:hover{border-color:var(--gold2);color:var(--gold2);box-shadow:none;background:transparent}
+.btn.ghost.onpaper{color:var(--copper-deep);border-color:var(--copper)}
+.btn.ghost.onpaper:hover{background:rgba(190,117,74,.08);color:var(--copper-deep)}
+.burger{display:none;background:none;border:none;cursor:pointer;margin-left:auto;z-index:65;position:relative}
+.burger span{display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;transition:.3s;box-shadow:0 0 6px rgba(0,0,0,.3)}
+nav.scrolled .burger span{background:var(--ink);box-shadow:none}
+
+/* HERO */
+.hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;padding:0 0 56px}
+.hero .bgimg{position:absolute;inset:0;background:url("images/venue-courtyard-clean.jpg") center 38%/cover no-repeat;filter:saturate(1.04)}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,10,.5) 0%,rgba(20,16,10,.16) 40%,rgba(38,30,18,.55) 72%,var(--paper) 100%)}
+.hero .inner{position:relative;z-index:2;width:min(1180px,92%);margin:0 auto;min-width:0}
+.hero .crumb{display:inline-block;max-width:100%;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);font-weight:600;background:rgba(25,20,12,.5);border:1px solid rgba(233,199,126,.4);padding:8px 18px;border-radius:999px;backdrop-filter:blur(6px);line-height:1.6}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(54px,9.5vw,116px);line-height:.98;margin:22px 0 4px;color:#FCF8EF;text-shadow:0 4px 44px rgba(0,0,0,.5)}
+.hero h1 .thin{display:block;font-size:clamp(20px,3vw,34px);font-weight:500;font-style:italic;color:var(--gold2);letter-spacing:.14em;margin-top:10px}
+.hero p.tag{max-width:560px;color:#EFE7D5;font-size:16.5px;margin:18px 0 26px;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+.heroctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.ratechip{display:inline-flex;align-items:center;gap:10px;background:rgba(25,20,12,.55);border:1px solid rgba(233,199,126,.4);border-radius:999px;padding:10px 18px;backdrop-filter:blur(6px);font-weight:600;font-size:14px;color:var(--cream)}
+.ratechip .stars{color:var(--gold2);letter-spacing:2px}
+.ratechip small{color:#CDBF9F;font-weight:500}
+.statbar{position:relative;z-index:2;width:min(1180px,92%);margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.statbar div{background:var(--card);padding:18px 22px;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(60,45,25,.08)}
+.statbar b{display:block;font-size:14px;color:var(--green-ink);font-weight:600;letter-spacing:.02em}
+.statbar span{font-size:12.5px;color:var(--muted)}
+
+/* MARQUEE */
+.marquee{border-block:1px solid var(--line);padding:16px 0;overflow:hidden;background:var(--paper2)}
+.mq{display:flex;gap:48px;white-space:nowrap;animation:mq 38s linear infinite;width:max-content}
+.mq span{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--muted)}
+.mq b{color:var(--copper);font-weight:600}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* EXPERIENCE */
+.exp-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:44px}
+.expcard{position:relative;border-radius:18px;overflow:hidden;min-height:300px;border:1px solid var(--line);box-shadow:0 14px 36px rgba(60,45,25,.12)}
+.expcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.expcard:hover img{transform:scale(1.06)}
+.expcard .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,12,7,0) 32%,rgba(15,12,7,.85) 100%)}
+.expcard .tx{position:absolute;left:22px;right:22px;bottom:18px}
+.expcard h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:4px;color:#FCF8EF}
+.expcard p{font-size:13px;color:#E2D8C2}
+.span7{grid-column:span 7}.span5{grid-column:span 5}.span4{grid-column:span 4}
+.zonechips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.zc{border:1.5px solid var(--copper);color:var(--copper-deep);border-radius:999px;padding:8px 18px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:rgba(190,117,74,.05)}
+
+/* SIGNATURES */
+.sig-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.sig{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .35s ease,box-shadow .35s;box-shadow:0 10px 30px rgba(60,45,25,.08)}
+.sig:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(60,45,25,.16)}
+.sig .ph{height:215px;overflow:hidden}
+.sig .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.sig:hover .ph img{transform:scale(1.07)}
+.sig .bd{padding:18px 20px 20px}
+.sig .rowx{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.sig h3{font-family:var(--serif);font-size:20.5px;font-weight:600;color:var(--green-ink)}
+.sig .pr{font-weight:700;color:var(--copper);font-size:17px;white-space:nowrap;font-family:var(--serif)}
+.sig p{font-size:13px;color:var(--muted);margin-top:5px}
+.tagline-pill{display:inline-block;margin-top:10px;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-deep);border:1px solid var(--copper);padding:4px 12px;border-radius:999px;background:rgba(190,117,74,.06)}
+
+/* veg/nonveg mark */
+.fssai{display:inline-block;width:13px;height:13px;border:1.6px solid;border-radius:2.5px;position:relative;vertical-align:-1px;margin-right:8px;flex:0 0 auto}
+.fssai::after{content:"";position:absolute;inset:2.2px;border-radius:50%}
+.fssai.v{border-color:var(--veg)}.fssai.v::after{background:var(--veg)}
+.fssai.n{border-color:var(--nonveg)}.fssai.n::after{background:var(--nonveg)}
+
+/* MENU */
+#menu{background:var(--paper2);border-block:1px solid var(--line)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:38px 0 30px}
+.tab{background:transparent;border:1.5px solid var(--line2);color:var(--muted);padding:11px 22px;border-radius:999px;font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.04em;cursor:pointer;transition:.3s}
+.tab:hover{border-color:var(--copper);color:var(--copper-deep)}
+.tab.on{background:var(--green);color:var(--cream);border-color:var(--green)}
+.mpanel{display:none;grid-template-columns:1fr 1fr;gap:8px 56px}
+.mpanel.on{display:grid}
+.mi{display:flex;align-items:baseline;gap:10px;padding:13px 4px;border-bottom:1px dashed var(--line2)}
+.mi .nm{font-weight:500;font-size:15px;display:flex;align-items:center;color:var(--ink)}
+.mi .dots{flex:1;border-bottom:1.5px dotted #C7B695;transform:translateY(-4px)}
+.mi .pr{font-weight:600;color:var(--copper-deep);font-size:15px;white-space:nowrap;font-family:var(--serif)}
+.mi .note{display:block;font-size:12px;color:var(--faint);font-weight:400;margin-top:1px}
+.chef{font-size:9.5px;font-weight:600;letter-spacing:.1em;color:var(--copper-deep);border:1px solid var(--copper);border-radius:999px;padding:2px 9px;margin-left:9px;white-space:nowrap;background:rgba(190,117,74,.06)}
+.menufoot{margin-top:30px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--faint);font-size:13px}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px;margin-top:44px}
+.g{border-radius:14px;overflow:hidden;position:relative;cursor:pointer;border:1px solid var(--line);box-shadow:0 8px 24px rgba(60,45,25,.1)}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.g:hover img{transform:scale(1.08)}
+.g.tall{grid-row:span 2}.g.wide{grid-column:span 2}
+.lb{position:fixed;inset:0;background:rgba(22,17,10,.93);z-index:90;display:none;align-items:center;justify-content:center;padding:4vh 4vw}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:88vh;border-radius:14px;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.lb .x{position:absolute;top:22px;right:30px;font-size:34px;color:#F8F3E6;cursor:pointer;background:none;border:none}
+
+/* REVIEWS */
+#reviews{background:var(--paper2);border-block:1px solid var(--line)}
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;position:relative;box-shadow:0 10px 30px rgba(60,45,25,.08)}
+.rev .q{font-family:var(--serif);font-size:44px;color:var(--copper);line-height:0;position:absolute;top:34px;left:24px;opacity:.45}
+.rev p{font-size:14.5px;color:#4C4234;margin:14px 0 18px;font-style:italic;font-family:var(--serif);font-weight:400;line-height:1.6}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev .av{width:38px;height:38px;border-radius:50%;background:var(--green);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px}
+.rev b{font-size:14px;color:var(--green-ink)}
+.rev small{display:block;color:var(--faint);font-size:12px}
+.rev .stars{color:var(--copper);font-size:13px;letter-spacing:2px;margin-left:auto}
+.gbadge{margin-top:34px;display:inline-flex;align-items:center;gap:14px;background:var(--card);border:1.5px solid var(--copper-soft);padding:14px 24px;border-radius:14px;box-shadow:0 10px 30px rgba(60,45,25,.08)}
+.gbadge .big{font-family:var(--serif);font-size:30px;color:var(--copper-deep);font-weight:600}
+.gbadge span{font-size:13px;color:var(--muted)}
+
+/* VISIT */
+#visit .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;margin-top:44px;align-items:stretch}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 10px 30px rgba(60,45,25,.08)}
+.vrow{display:flex;gap:16px;padding:15px 0;border-bottom:1px dashed var(--line2);align-items:flex-start}
+.vrow:last-child{border:none}
+.vrow .ic{width:38px;height:38px;border-radius:12px;background:rgba(190,117,74,.1);border:1px solid var(--copper-soft);display:flex;align-items:center;justify-content:center;color:var(--copper-deep);flex:0 0 auto;font-size:16px}
+.vrow b{display:block;font-size:14.5px;margin-bottom:2px;color:var(--green-ink)}
+.vrow span{font-size:13.5px;color:var(--muted)}
+.vrow a{color:var(--copper-deep);font-weight:600}
+.amen{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.am{font-size:12px;font-weight:500;color:var(--muted);border:1px solid var(--line2);border-radius:999px;padding:6px 14px;background:var(--paper)}
+.mapbox{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:420px;position:relative;box-shadow:0 10px 30px rgba(60,45,25,.1)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* CTA + FOOTER */
+.bigcta{background:url("images/hero-biryani.jpg") center/cover fixed;position:relative;text-align:center}
+.bigcta .shade{position:absolute;inset:0;background:rgba(27,44,33,.88)}
+.bigcta .inner{position:relative;z-index:2}
+.bigcta h2{font-family:var(--serif);font-size:clamp(30px,4.6vw,52px);font-weight:600;max-width:760px;margin:14px auto 12px;color:#FCF8EF}
+.bigcta p{color:#D8E0CE;max-width:520px;margin:0 auto 30px}
+footer{border-top:1px solid var(--line);padding:46px 0 110px;background:var(--green-deep)}
+.frow{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.frow .sp{margin-left:auto;text-align:right}
+footer .brand .nm{color:#F4EFE2}
+footer .brand .sub{color:var(--gold2)}
+footer .fine{color:#9DAE9B;font-size:11.5px;margin-top:26px;line-height:1.7}
+footer .fine b{color:var(--gold2)}
+
+/* FLOATING */
+.fab{position:fixed;z-index:70;right:22px;display:flex;flex-direction:column;gap:12px;bottom:22px}
+.fbtn{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:0 12px 30px rgba(38,32,23,.3);transition:transform .25s}
+.fbtn:hover{transform:scale(1.08)}
+.fbtn.wa{background:#23B33A}
+.fbtn.ai{background:var(--copper)}
+.fbtn svg{width:28px;height:28px}
+
+/* CHAT WIDGET */
+.chatp{position:fixed;right:22px;bottom:94px;width:min(390px,calc(100vw - 32px));max-height:min(600px,calc(100svh - 120px));background:var(--card);border:1px solid var(--line2);border-radius:20px;z-index:80;display:none;flex-direction:column;overflow:hidden;box-shadow:0 30px 80px rgba(38,32,23,.35)}
+.chatp.on{display:flex}
+.chead{background:var(--green-deep);padding:16px 18px;display:flex;gap:12px;align-items:center}
+.chead .cav{width:40px;height:40px;border-radius:50%;background:var(--copper);display:flex;align-items:center;justify-content:center;font-weight:600;color:#FFF8EE;font-family:var(--serif);font-size:18px;position:relative}
+.chead .cav::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#5BC273;border:2px solid var(--green-deep);bottom:0;right:0}
+.chead b{font-size:14.5px;display:block;color:#F4EFE2}
+.chead small{color:#A8BCA4;font-size:11.5px}
+.chead .cx{margin-left:auto;background:none;border:none;color:#C6D2C2;font-size:22px;cursor:pointer}
+.cbody{padding:16px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;flex:1;background:var(--paper)}
+.msg{max-width:84%;padding:11px 14px;border-radius:16px;font-size:13.5px;line-height:1.5}
+.msg.bot{background:#fff;border:1px solid var(--line);border-top-left-radius:5px;align-self:flex-start;color:var(--ink);box-shadow:0 3px 10px rgba(60,45,25,.06)}
+.msg.user{background:var(--green);color:var(--cream);font-weight:500;border-top-right-radius:5px;align-self:flex-end}
+.msg.bot b{color:var(--copper-deep)}
+.qrs{display:flex;gap:8px;flex-wrap:wrap;align-self:flex-start}
+.qr{background:#fff;border:1.5px solid var(--copper);color:var(--copper-deep);font-size:12.5px;font-weight:600;border-radius:999px;padding:7px 14px;cursor:pointer;transition:.25s;font-family:var(--sans)}
+.qr:hover{background:rgba(190,117,74,.1)}
+.typing{display:inline-flex;gap:4px;padding:12px 16px;background:#fff;border:1px solid var(--line);border-radius:16px;border-top-left-radius:5px;align-self:flex-start}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--copper);animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.cfoot{padding:10px 16px;border-top:1px solid var(--line);font-size:10.5px;color:var(--faint);text-align:center;letter-spacing:.06em;background:var(--card)}
+.cfoot b{color:var(--copper-deep)}
+
+/* PREMIUM POLISH */
+::selection{background:rgba(190,117,74,.28)}
+html{scrollbar-color:#D9C8A8 #F3EBDC}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--paper2)}
+::-webkit-scrollbar-thumb{background:var(--copper-soft);border-radius:8px;border:2.5px solid var(--paper2)}
+section{scroll-margin-top:72px}
+body{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 0.34 0 0 0 0 0.26 0 0 0 0 0.14 0 0 0 .045 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>")}
+.eyebrow{display:inline-flex;align-items:center;gap:11px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--copper)}
+.ghostword{position:absolute;top:30px;right:0;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(90px,11vw,168px);line-height:1;color:rgba(190,117,74,.065);pointer-events:none;user-select:none;white-space:nowrap;z-index:0}
+section .wrap{position:relative;z-index:1}
+.navlinks a:not(.btn){position:relative}
+.navlinks a:not(.btn)::after{content:"";position:absolute;left:50%;right:50%;bottom:-7px;height:1.5px;background:var(--copper);transition:left .32s ease,right .32s ease}
+.navlinks a:not(.btn):hover::after{left:0;right:0}
+.btn .ar{display:inline-block;transition:transform .3s}
+.btn:hover .ar{transform:translateX(5px)}
+.statbar div{border-top:2px solid var(--copper-soft)}
+.statbar b{font-family:var(--serif);font-size:16.5px}
+.story-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.arch{position:relative;padding:11px}
+.arch::before{content:"";position:absolute;inset:0;border:1px solid var(--copper);border-radius:310px 310px 20px 20px;opacity:.5}
+.arch img{border-radius:300px 300px 13px 13px;width:100%;height:540px;object-fit:cover;box-shadow:0 26px 64px rgba(60,45,25,.2)}
+.arch .cap{position:absolute;bottom:-15px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 22px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper-deep);font-weight:600;white-space:nowrap;box-shadow:0 10px 24px rgba(60,45,25,.12)}
+.pull{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--green-ink);line-height:1.55;border-left:2px solid var(--copper);padding-left:24px;margin:26px 0 22px}
+.story p.body{color:var(--muted);font-size:15px;margin-bottom:13px}
+.sigline{font-family:var(--serif);font-style:italic;color:var(--copper-deep);font-size:17px;margin-top:16px}
+@media(min-width:981px){.mpanel.on{position:relative}.mpanel.on::before{content:"";position:absolute;left:50%;top:8px;bottom:8px;width:1px;background:var(--line)}}
+.bigcta .inner{border:1px solid rgba(233,199,126,.42);padding:56px 32px;position:relative}
+.bigcta .inner::after{content:"";position:absolute;inset:7px;border:1px solid rgba(233,199,126,.2);pointer-events:none}
+.fnt-orn{display:flex;align-items:center;gap:20px;justify-content:center;margin-bottom:34px}
+.fnt-orn::before,.fnt-orn::after{content:"";flex:1;max-width:230px;height:1px;background:rgba(233,199,126,.32)}
+.fssai.e{border-color:#C9A227}.fssai.e::after{background:#C9A227}
+.g{outline:1px solid transparent;outline-offset:-8px;transition:outline-color .4s}
+.g:hover{outline-color:rgba(255,255,255,.55)}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  body.nav-open{overflow:hidden}
+  nav{padding:12px 0;background:rgba(250,246,238,.96);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(190,117,74,.22)}
+  .navrow{gap:14px}
+  .brand{max-width:calc(100vw - 112px)}
+  .brand .mark{width:42px;height:42px}
+  .brand .nm{font-size:18px;color:var(--green-ink)}
+  .brand .sub{color:var(--copper)}
+  .story-grid{grid-template-columns:1fr;gap:44px}
+  .arch img{height:420px}
+  .ghostword{display:none}
+  .span7,.span5,.span4{grid-column:span 12}
+  .sig-rail,.revgrid{grid-template-columns:1fr}
+  .mpanel{grid-template-columns:1fr}
+  #visit .grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+  .statbar{grid-template-columns:1fr 1fr}
+  .navlinks{position:fixed;inset:0;background:rgba(250,246,238,.985);flex-direction:column;justify-content:center;gap:22px;display:flex;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-8px);transition:opacity .22s ease,visibility .22s ease,transform .22s ease;padding:92px 24px 36px;z-index:62}
+  .navlinks.open{opacity:1;visibility:visible;pointer-events:auto;transform:none}
+  .navlinks a{font-size:20px;color:var(--ink)!important;text-shadow:none}
+  .navlinks .btn{font-size:16px;color:#FFF8EE!important;margin-top:8px}
+  .burger{display:block}
+  .burger span{background:var(--ink);box-shadow:none}
+  .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .bigcta{background-attachment:scroll}
+  .hero{min-height:max(100svh,840px);align-items:flex-end;padding:104px 0 32px}
+  .hero .inner{width:min(100% - 28px,520px)}
+  .hero .crumb{letter-spacing:.13em;font-size:11px}
+  .hero h1{font-size:clamp(44px,12.4vw,70px);margin-top:18px}
+  .hero h1 .thin{font-size:clamp(18px,5.6vw,28px);letter-spacing:.11em}
+  .hero p.tag{font-size:15px;line-height:1.7;margin:16px 0 22px}
+  .heroctas{gap:12px}
+  .heroctas .btn{min-height:52px;padding:13px 22px}
+  .ratechip{max-width:100%;gap:8px;padding:9px 14px;font-size:13px}
+  .ratechip .stars{letter-spacing:1px}
+  .ratechip small{font-size:12px}
+  .statbar{width:100%;margin-top:28px;gap:10px}
+  .statbar div{padding:14px 16px;border-radius:12px}
+  .statbar b{font-size:15px}
+  .statbar span{font-size:11.5px;line-height:1.45}
+  .fab{right:14px;bottom:calc(18px + env(safe-area-inset-bottom));gap:10px}
+  .fbtn{width:52px;height:52px}
+  .fbtn svg{width:25px;height:25px}
+  .chatp{right:12px;bottom:82px;width:calc(100vw - 24px);max-height:calc(100svh - 104px);border-radius:16px}
+}
+@media (max-width:420px){
+  section{padding:66px 0}
+  .wrap{width:min(100% - 20px,1180px)}
+  .hero{min-height:max(100svh,820px);padding-top:96px}
+  .hero .inner{width:calc(100% - 20px)}
+  .hero h1{font-size:clamp(42px,12vw,56px)}
+  .hero p.tag{font-size:14.5px}
+  .heroctas .btn{width:100%;justify-content:center}
+  .ratechip{width:100%;justify-content:center}
+  .statbar{grid-template-columns:1fr 1fr}
+  .statbar div{padding:12px 12px}
+  .statbar b{font-size:14px}
+  .gal{gap:10px;grid-auto-rows:140px}
+  .zonechips{gap:8px}
+  .zc{font-size:11px;padding:7px 13px;letter-spacing:.12em}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap navrow">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="#22372A"/>
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#BE754A" stroke-width="2.5"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="rgba(233,199,126,.4)" stroke-width="1"/>
+        <text x="50" y="62" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="34" font-weight="600" fill="#E9C77E">OP</text>
+        <path d="M50 9 C53 13 53 17 50 20 C47 17 47 13 50 9 Z" fill="#5BC273"/>
+      </svg>
+      <span>
+        <span class="nm">Our Place</span><br>
+        <span class="sub">The Food Hunt</span>
+      </span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="navlinks" id="navlinks">
+      <a href="#experience">Experience</a>
+      <a href="#signatures">Signatures</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit us</a>
+      <a class="btn copper" href="https://wa.me/917337332345?text=Hi!%20I%27d%20like%20to%20book%20a%20table%20at%20Our%20Place%20%E2%80%93%20The%20Food%20Hunt." target="_blank" rel="noopener">Book a table</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="bgimg" role="img" aria-label="Lantern-lit open-air courtyard at Our Place, The Food Hunt"></div>
+  <div class="shade"></div>
+  <div class="inner">
+    <span class="crumb">Ashramam Road · Tadepalli · Vijayawada</span>
+    <h1>Our Place
+      <span class="thin">— The Food Hunt —</span>
+    </h1>
+    <p class="tag">An open-air village retreat by the Krishna — thatched-hut cabanas, a waterfall, fairy-lit nights and proper Andhra feasting. This is where Vijayawada celebrates.</p>
+    <div class="heroctas">
+      <a class="btn copper" href="#menu">Explore the menu <span class="ar">→</span></a>
+      <a class="btn ghost" href="https://wa.me/917337332345?text=Hi!%20I%27d%20like%20to%20book%20a%20table%20at%20Our%20Place%20%E2%80%93%20The%20Food%20Hunt." target="_blank" rel="noopener">Book on WhatsApp</a>
+      <span class="ratechip"><span class="stars">★★★★☆</span> 4.1 <small>· 9,500+ Google reviews</small></span>
+    </div>
+    <div class="statbar">
+      <div><b>Open every day</b><span>12–4:30 pm · 7–11 pm</span></div>
+      <div><b>₹1,500 for two</b><span>Full bar · veg & non-veg</span></div>
+      <div><b>Garden seating</b><span>Huts · pergolas · indoor AC</span></div>
+      <div><b>Family friendly</b><span>Kids' play area · koi & aviary</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mq">
+    <span>Natu Kodi Fry <b>·</b></span><span>Chicken Dum Biryani <b>·</b></span><span>AP Fish Roast <b>·</b></span><span>Raagi Sangati <b>·</b></span><span>Tandoori Chicken <b>·</b></span><span>Malai Tikka <b>·</b></span><span>Konaseema Kodi Pulao <b>·</b></span><span>Crispy Corn <b>·</b></span>
+    <span>Natu Kodi Fry <b>·</b></span><span>Chicken Dum Biryani <b>·</b></span><span>AP Fish Roast <b>·</b></span><span>Raagi Sangati <b>·</b></span><span>Tandoori Chicken <b>·</b></span><span>Malai Tikka <b>·</b></span><span>Konaseema Kodi Pulao <b>·</b></span><span>Crispy Corn <b>·</b></span>
+  </div>
+</div>
+
+<section id="story" style="padding-bottom:64px">
+  <span class="ghostword" aria-hidden="true">Tadepalli</span>
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="reveal story">
+        <span class="eyebrow">Our Story · Since 2018</span>
+        <h2 class="sec">A riverside village,<br><em>set for dinner</em></h2>
+        <p class="pull">"Some restaurants serve dinner. We wanted to give Vijayawada an evening — water, birdsong, woodsmoke and a proper Andhra table."</p>
+        <p class="body">Across the Varadhi, behind a rock waterfall, Our Place spreads over a lantern-lit garden of thatched huts, pergolas and koi ponds. The kitchen keeps one foot in the village — raagi sangati, natu kodi, the clay tandoor — and one in the city's favourites, from dum biryanis to Indo-Chinese.</p>
+        <p class="body">Come for a birthday, a family Sunday, or just a long unhurried dinner under the lights — there's a corner here shaped for it.</p>
+        <p class="sigline">— The Our Place family</p>
+      </div>
+      <div class="reveal arch">
+        <img src="images/venue-cabana-arch.jpg" alt="Cabana wall with hanging plants and Edison lamps" loading="lazy">
+        <span class="cap">The garden, after sundown</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="padding-top:64px">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">The Experience</span>
+      <h2 class="sec">A village by night,<br>a feast <em>under the stars</em></h2>
+      <p class="lede">Spread across a walled garden between farm fields, Our Place isn't a restaurant you drop into — it's an evening out. Pick your corner: a thatched hut, a plant-hung pergola, the koi zone, or the industrial-rustic indoor hall with the full bar.</p>
+      <div class="zonechips">
+        <span class="zc">The Hut</span><span class="zc">High Touch</span><span class="zc">Koi Zone</span><span class="zc">Indoor Hall &amp; Bar</span><span class="zc">Kids' Play Area</span>
+      </div>
+    </div>
+    <div class="exp-grid">
+      <div class="expcard span7 reveal"><img src="images/venue-waterfall-clean.jpg" alt="Signature rock waterfall with Our Place lettering" loading="lazy"><div class="ov"></div><div class="tx"><h3>The waterfall welcome</h3><p>Our signature rock cascade greets you at the gate — the most photographed spot in Tadepalli.</p></div></div>
+      <div class="expcard span5 reveal"><img src="images/venue-hut-clean.jpg" alt="Thatched-roof hut cabana with bottle lamps at night" loading="lazy"><div class="ov"></div><div class="tx"><h3>Thatched-hut cabanas</h3><p>Private palm-roof huts with warm bottle-lamps — made for long dinners.</p></div></div>
+      <div class="expcard span4 reveal"><img src="images/venue-pergola-clean.jpg" alt="Pergola dining with rattan chairs and hanging planters" loading="lazy"><div class="ov"></div><div class="tx"><h3>Garden pergolas</h3><p>Rattan chairs under hanging planters and open sky.</p></div></div>
+      <div class="expcard span4 reveal"><img src="images/venue-hall-clean.jpg" alt="Industrial-rustic indoor hall with exposed brick" loading="lazy"><div class="ov"></div><div class="tx"><h3>The indoor hall</h3><p>Exposed brick, vintage-car art and a hanging warplane — fully air-conditioned, full bar.</p></div></div>
+      <div class="expcard span4 reveal"><img src="images/venue-courtyard-clean.jpg" alt="Fairy-lit courtyard with lantern pavilion and aviary" loading="lazy"><div class="ov"></div><div class="tx"><h3>Fairy-lit courtyards</h3><p>Lanterns, string lights and the evening buzz — kids love the aviary.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="signatures" style="background:var(--paper);padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">House Signatures</span>
+      <h2 class="sec">What the hunt <em>is for</em></h2>
+      <p class="lede">Fire-licked Andhra classics and dum biryanis our regulars cross the bridge for.</p>
+    </div>
+    <div class="sig-rail">
+      <div class="sig reveal"><div class="ph"><img src="images/dish-dum-biryani.jpg" alt="Chicken Dum Biryani served in a steel handi" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai n"></i>Chicken Dum Biryani</h3><span class="pr">₹400</span></div><p>Slow-sealed basmati, fried onion and a leg piece buried in the steam — the house benchmark.</p><span class="tagline-pill">Most ordered</span></div></div>
+      <div class="sig reveal"><div class="ph"><img src="images/dish-natu-kodi.jpg" alt="Natu Kodi country chicken fry with green chilli" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai n"></i>Natu Kodi Fry</h3><span class="pr">₹490</span></div><p>Country chicken, village masala, serious heat — Andhra the way grandmothers approve.</p><span class="tagline-pill">Andhra classic</span></div></div>
+      <div class="sig reveal"><div class="ph"><img src="images/dish-fish-roast.jpg" alt="AP fish roast with crisped curry leaves" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai n"></i>AP Fish Roast</h3><span class="pr">₹530</span></div><p>River fish in a deep-red roast with crisped curry leaves — the reviewers' favourite.</p><span class="tagline-pill">Guest favourite</span></div></div>
+      <div class="sig reveal"><div class="ph"><img src="images/dish-tandoori.jpg" alt="Char-grilled full tandoori chicken" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai n"></i>Tandoori Chicken <small style="color:var(--faint);font-size:12px">(full)</small></h3><span class="pr">₹710</span></div><p>Char first, juice after. Clay-oven classic with mint chutney and salad.</p><span class="tagline-pill">From the tandoor</span></div></div>
+      <div class="sig reveal"><div class="ph"><img src="images/dish-malai-tikka.jpg" alt="Creamy malai tikka kebabs with mint chutney" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai n"></i>Malai Tikka</h3><span class="pr">₹510</span></div><p>Cream-soft kebabs with a gentle smoke — the one the table fights over.</p><span class="tagline-pill">Crowd pleaser</span></div></div>
+      <div class="sig reveal"><div class="ph"><img src="images/dish-crispy-corn.jpg" alt="Crispy corn with fried curry leaves" loading="lazy"></div><div class="bd"><div class="rowx"><h3><i class="fssai v"></i>Crispy Corn</h3><span class="pr">₹310</span></div><p>Golden kernels, curry-leaf crunch — the starter every table begins with.</p><span class="tagline-pill">Veg favourite</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <span class="ghostword" aria-hidden="true">Biryani</span>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">The Menu</span>
+      <h2 class="sec">From the soil <em>&amp; the fire</em></h2>
+      <p class="lede">A taste of the full 114-dish menu — soups to cooker biryanis. <span style="color:var(--copper-deep)">Prices indicative (June 2026); ask the AI assistant for today's full menu.</span></p>
+    </div>
+    <div class="tabs reveal" role="tablist">
+      <button class="tab on" data-t="t1">Starters</button>
+      <button class="tab" data-t="t2">Tandoor &amp; Kebabs</button>
+      <button class="tab" data-t="t3">Biryani &amp; Pulao</button>
+      <button class="tab" data-t="t4">Andhra Specials</button>
+      <button class="tab" data-t="t5">Curries</button>
+      <button class="tab" data-t="t6">Rice &amp; Breads</button>
+    </div>
+
+    <div class="mpanel on" id="t1">
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Crispy Corn</span><span class="dots"></span><span class="pr">₹310</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Baby Corn 65</span><span class="dots"></span><span class="pr">₹310</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Baby Corn Manchurian</span><span class="dots"></span><span class="pr">₹340</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Mushroom Manchurian</span><span class="dots"></span><span class="pr">₹340</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Paneer 555 <span class="chef">Loved here</span></span><span class="dots"></span><span class="pr">₹360</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken 65</span><span class="dots"></span><span class="pr">₹390</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chilly Chicken</span><span class="dots"></span><span class="pr">₹390</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Majestic <span class="chef">Loved here</span></span><span class="dots"></span><span class="pr">₹395</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Joint Fry</span><span class="dots"></span><span class="pr">₹360</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Prawn Fry</span><span class="dots"></span><span class="pr">₹430</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Tomato / Manchow / Hot &amp; Sour Soup</span><span class="dots"></span><span class="pr">₹200</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Manchow Soup</span><span class="dots"></span><span class="pr">₹230</span></div>
+    </div>
+
+    <div class="mpanel" id="t2">
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Tandoori Chicken (full)</span><span class="dots"></span><span class="pr">₹710</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Afghani Kabab <span class="chef">Signature</span></span><span class="dots"></span><span class="pr">₹520</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Malai Tikka</span><span class="dots"></span><span class="pr">₹510</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Kasturi Kabab</span><span class="dots"></span><span class="pr">₹510</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Tangadi Kabab</span><span class="dots"></span><span class="pr">₹510</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Tikka</span><span class="dots"></span><span class="pr">₹495</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Fish Tikka</span><span class="dots"></span><span class="pr">₹600</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Prawn Tikka</span><span class="dots"></span><span class="pr">₹590</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Malai Prawn</span><span class="dots"></span><span class="pr">₹610</span></div>
+    </div>
+
+    <div class="mpanel" id="t3">
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Dum Biryani <span class="chef">Most ordered</span></span><span class="dots"></span><span class="pr">₹400</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Special Chicken Biryani</span><span class="dots"></span><span class="pr">₹470</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Mutton Dum Biryani</span><span class="dots"></span><span class="pr">₹660</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Natu Kodi Biryani Fry</span><span class="dots"></span><span class="pr">₹560</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Special Fish Biryani</span><span class="dots"></span><span class="pr">₹540</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Special Prawn Biryani</span><span class="dots"></span><span class="pr">₹560</span></div>
+      <div class="mi"><span class="nm"><i class="fssai e" style="border-color:#C9A227"></i>Egg Biryani</span><span class="dots"></span><span class="pr">₹305</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Cooker Biryani — Chicken / Mutton / Natu Kodi <span class="chef">For the table</span><span class="note">Sealed pot, medium or large — feeds 3–6</span></span><span class="dots"></span><span class="pr">₹899+</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Konaseema Kodi Pulao</span><span class="dots"></span><span class="pr">₹495</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Mutton Pulao</span><span class="dots"></span><span class="pr">₹620</span></div>
+    </div>
+
+    <div class="mpanel" id="t4">
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Natu Kodi Fry</span><span class="dots"></span><span class="pr">₹490</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>AP Fish Roast <span class="chef">Guest favourite</span></span><span class="dots"></span><span class="pr">₹530</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>AP Chicken Roast</span><span class="dots"></span><span class="pr">₹450</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Quills (Quail) Fry</span><span class="dots"></span><span class="pr">₹480</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Quills (Quail) Roast</span><span class="dots"></span><span class="pr">₹480</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>AP Prawn Curry</span><span class="dots"></span><span class="pr">₹510</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Raagi Sangati + Natu Kodi Pulusu <span class="chef">Village plate</span></span><span class="dots"></span><span class="pr">₹420</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Raagi Sangati + Mamsam Pulusu</span><span class="dots"></span><span class="pr">₹520</span></div>
+    </div>
+
+    <div class="mpanel" id="t5">
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Butter Chicken</span><span class="dots"></span><span class="pr">₹380</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Afghan Chicken <span class="chef">Signature</span></span><span class="dots"></span><span class="pr">₹440</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Kadai Chicken</span><span class="dots"></span><span class="pr">₹410</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Chettinadu</span><span class="dots"></span><span class="pr">₹420</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Mutton Curry</span><span class="dots"></span><span class="pr">₹560</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Paneer Butter Masala</span><span class="dots"></span><span class="pr">₹360</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Mushroom Butter Masala</span><span class="dots"></span><span class="pr">₹380</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Malai Kofta</span><span class="dots"></span><span class="pr">₹340</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Methi Chaman <span class="chef">Loved here</span></span><span class="dots"></span><span class="pr">₹340</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Palak Paneer</span><span class="dots"></span><span class="pr">₹330</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Kadai Veg / Kadai Mushroom</span><span class="dots"></span><span class="pr">₹340</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Cashew Tomato Curry</span><span class="dots"></span><span class="pr">₹360</span></div>
+    </div>
+
+    <div class="mpanel" id="t6">
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Veg Fried Rice</span><span class="dots"></span><span class="pr">₹310</span></div>
+      <div class="mi"><span class="nm"><i class="fssai e" style="border-color:#C9A227"></i>Egg Fried Rice</span><span class="dots"></span><span class="pr">₹360</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Chicken Fried Rice</span><span class="dots"></span><span class="pr">₹390</span></div>
+      <div class="mi"><span class="nm"><i class="fssai n"></i>Schezwan Chicken Fried Rice <span class="chef">Spice hit</span></span><span class="dots"></span><span class="pr">₹410</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Jeera Rice</span><span class="dots"></span><span class="pr">₹330</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Curd Rice</span><span class="dots"></span><span class="pr">₹200</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Butter Naan <span class="chef">Loved here</span></span><span class="dots"></span><span class="pr">₹67</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Garlic Naan</span><span class="dots"></span><span class="pr">₹100</span></div>
+      <div class="mi"><span class="nm"><i class="fssai v"></i>Butter Roti / Roti / Pulka</span><span class="dots"></span><span class="pr">₹25–52</span></div>
+    </div>
+
+    <div class="menufoot reveal">
+      <span><i class="fssai v"></i> Veg</span>
+      <span><i class="fssai n"></i> Non-veg</span>
+      <span style="margin-left:auto">Full bar &amp; mocktails available · Delivery on Zomato &amp; Swiggy</span>
+      <a class="btn ghost onpaper" href="https://wa.me/917337332345?text=Hi!%20Please%20send%20me%20the%20full%20menu%20of%20Our%20Place%20%E2%80%93%20The%20Food%20Hunt." target="_blank" rel="noopener" style="padding:9px 18px;font-size:12.5px">Full menu on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="sec">Evenings at <em>Our Place</em></h2>
+    </div>
+    <div class="gal">
+      <div class="g tall reveal"><img src="images/venue-hut-clean.jpg" alt="Thatched hut cabana at night" loading="lazy"></div>
+      <div class="g reveal"><img src="images/dish-special-biryani.jpg" alt="Special chicken biryani with egg" loading="lazy"></div>
+      <div class="g reveal"><img src="images/venue-waterfall-clean.jpg" alt="Rock waterfall with Our Place lettering" loading="lazy"></div>
+      <div class="g tall reveal"><img src="images/venue-hall-clean.jpg" alt="Indoor hall with exposed brick" loading="lazy"></div>
+      <div class="g reveal"><img src="images/dish-chicken-65.jpg" alt="Chicken 65" loading="lazy"></div>
+      <div class="g reveal"><img src="images/venue-pergola-clean.jpg" alt="Pergola garden dining" loading="lazy"></div>
+      <div class="g wide reveal"><img src="images/venue-courtyard-clean.jpg" alt="Lantern-lit courtyard with aviary" loading="lazy"></div>
+      <div class="g reveal"><img src="images/dish-paneer-bm.jpg" alt="Paneer butter masala in kadai" loading="lazy"></div>
+      <div class="g reveal"><img src="images/dish-prawn-tikka.jpg" alt="Prawn tikka" loading="lazy"></div>
+      <div class="g reveal"><img src="images/dish-butter-chicken.jpg" alt="Butter chicken" loading="lazy"></div>
+      <div class="g reveal"><img src="images/venue-cabana-arch.jpg" alt="Cabana wall with plants and Edison bulbs" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <span class="ghostword" aria-hidden="true">Namaste</span>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Word of Mouth</span>
+      <h2 class="sec">9,500 reviews <em>can't be wrong</em></h2>
+    </div>
+    <div class="revgrid">
+      <div class="rev reveal"><span class="q">"</span><p>Afghani chicken and fish roast — excellent dishes, service too good. Ambience also outstanding.</p><div class="who"><span class="av">S</span><span><b>Sanam</b><small>Zomato dining review</small></span><span class="stars">★★★★★</span></div></div>
+      <div class="rev reveal"><span class="q">"</span><p>Loved the taste at this place... loved the ambience. A proper evening out with the family.</p><div class="who"><span class="av">M</span><span><b>Munna Shaik</b><small>magicpin review</small></span><span class="stars">★★★★★</span></div></div>
+      <div class="rev reveal"><span class="q">"</span><p>Very good place. Worth it for that setting — and the koi zone was awesome.</p><div class="who"><span class="av">G</span><span><b>Google guest</b><small>Google review</small></span><span class="stars">★★★★☆</span></div></div>
+    </div>
+    <div class="gbadge reveal">
+      <span class="big">4.1<span style="font-size:16px;color:var(--faint)">/5</span></span>
+      <span><b style="color:var(--copper-deep)">9,500+ Google reviews</b><br>4.2/5 on Zomato delivery · 4.3/5 on magicpin</span>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <span class="ghostword" aria-hidden="true">Varadhi</span>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Visit Us</span>
+      <h2 class="sec">Just across <em>the Varadhi</em></h2>
+      <p class="lede">Two minutes off Kanakadurga Varadhi on the Tadepalli side — easy from anywhere in Vijayawada, with ample free parking.</p>
+    </div>
+    <div class="grid">
+      <div class="vcard reveal">
+        <div class="vrow"><span class="ic">⌖</span><span><b>Address</b><span>12-464/5, Ashramam Road, near Kanakadurga Varadhi (NH16),<br>Tadepalli, Vijayawada — 522501</span></span></div>
+        <div class="vrow"><span class="ic">✆</span><span><b>Reservations &amp; takeaway</b><span><a href="tel:+917337332345">+91 73373 32345</a> · <a href="https://wa.me/917337332345" target="_blank" rel="noopener">WhatsApp us</a></span></span></div>
+        <div class="vrow"><span class="ic">◷</span><span><b>Hours — open every day</b><span>Lunch 12:00 – 4:30 pm · Dinner 7:00 – 11:00 pm</span></span></div>
+        <div class="vrow"><span class="ic">✦</span><span><b>Good to know</b><span class="amen" style="margin-top:8px"><span class="am">Free parking</span><span class="am">Indoor AC + open-air</span><span class="am">Full bar</span><span class="am">Kids' play area</span><span class="am">Koi &amp; aviary</span><span class="am">Wheelchair friendly</span><span class="am">Cards &amp; UPI</span><span class="am">Zomato · Swiggy delivery</span></span></span></div>
+      </div>
+      <div class="mapbox reveal">
+        <iframe title="Map — Our Place The Food Hunt, Tadepalli" src="https://maps.google.com/maps?q=16.4731575,80.6244586&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bigcta">
+  <div class="shade"></div>
+  <div class="wrap inner reveal">
+    <span class="eyebrow" style="color:var(--gold2)">Tonight, then?</span>
+    <h2>Bring the whole family.<br>We'll keep a hut ready.</h2>
+    <p>Book in ten seconds on WhatsApp — or just ask our AI assistant, any time of night.</p>
+    <a class="btn copper" href="https://wa.me/917337332345?text=Hi!%20I%27d%20like%20to%20book%20a%20table%20at%20Our%20Place%20%E2%80%93%20The%20Food%20Hunt." target="_blank" rel="noopener" style="font-size:15px;padding:15px 32px">Book a table on WhatsApp <span class="ar">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fnt-orn">
+      <svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="none" stroke="#BE754A" stroke-width="2.5"/><text x="50" y="62" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="32" font-weight="600" fill="#E9C77E">OP</text></svg>
+    </div>
+    <div class="frow">
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 100 100" aria-hidden="true" style="width:40px;height:40px">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#BE754A" stroke-width="2.5"/>
+          <text x="50" y="62" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="34" font-weight="600" fill="#E9C77E">OP</text>
+          <path d="M50 9 C53 13 53 17 50 20 C47 17 47 13 50 9 Z" fill="#5BC273"/>
+        </svg>
+        <span><span class="nm">Our Place</span><br><span class="sub">The Food Hunt</span></span>
+      </a>
+      <div class="sp">
+        <a href="https://www.facebook.com/OurPlaceTFH/" target="_blank" rel="noopener" style="color:var(--gold2);font-weight:600;font-size:13.5px">Facebook</a> ·
+        <a href="https://wa.me/917337332345" target="_blank" rel="noopener" style="color:var(--gold2);font-weight:600;font-size:13.5px">WhatsApp</a> ·
+        <a href="tel:+917337332345" style="color:var(--gold2);font-weight:600;font-size:13.5px">+91 73373 32345</a>
+      </div>
+    </div>
+    <p class="fine">Demo website concept crafted by <b>Sahayak AI</b> — websites &amp; 24×7 AI call + chat agents for restaurants · harthikvarma0@gmail.com<br>
+    Menu items, prices, photos &amp; reviews sourced from the restaurant's public listings (Zomato, magicpin, Restaurant Guru, EazyDiner), June 2026. Prices indicative; items marked with estimated prices where listings don't publish them. This demo is not yet an official website of Our Place – The Food Hunt.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <button class="fbtn ai" id="aiBtn" aria-label="Chat with AI assistant">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H9l-4.2 3.4c-.5.4-1.3 0-1.3-.7V6z" fill="#FFF8EE"/><circle cx="9" cy="9.5" r="1.2" fill="#BE754A"/><circle cx="13" cy="9.5" r="1.2" fill="#BE754A"/><circle cx="17" cy="9.5" r="1.2" fill="#BE754A"/></svg>
+  </button>
+  <a class="fbtn wa" href="https://wa.me/917337332345?text=Hi!%20I%27d%20like%20to%20book%20a%20table%20at%20Our%20Place%20%E2%80%93%20The%20Food%20Hunt." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l1-1.1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg>
+  </a>
+</div>
+
+<div class="chatp" id="chatp" role="dialog" aria-label="AI assistant chat">
+  <div class="chead">
+    <span class="cav">O</span>
+    <span><b>Our Place Assistant</b><small>Online · answers in seconds, 24×7</small></span>
+    <button class="cx" id="chatX" aria-label="Close chat">×</button>
+  </div>
+  <div class="cbody" id="cbody"></div>
+  <div class="cfoot">⚡ Powered by <b>SAHAYAK AI</b> — the same assistant answers your calls &amp; WhatsApp, 24×7</div>
+</div>
+
+<div class="lb" id="lb"><button class="x" aria-label="Close">×</button><img id="lbimg" src="" alt="Gallery image enlarged"></div>
+
+<script>
+const qp=new URLSearchParams(location.search);
+if(qp.has('noanim'))document.documentElement.classList.add('noanim');
+if(qp.has('flat'))document.documentElement.classList.add('flat');
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+function setMenu(open){
+  links.classList.toggle('open',open);
+  burger.classList.toggle('open',open);
+  document.body.classList.toggle('nav-open',open);
+  burger.setAttribute('aria-expanded',open?'true':'false');
+}
+burger.setAttribute('aria-expanded','false');
+burger.onclick=()=>setMenu(!links.classList.contains('open'));
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>setMenu(false));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+const io=new IntersectionObserver(es=>{es.filter(e=>e.isIntersecting).forEach((e,i)=>{setTimeout(()=>e.target.classList.add('in'),i*90);io.unobserve(e.target)})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.mpanel').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');document.getElementById(t.dataset.t).classList.add('on');
+});
+
+const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+document.querySelectorAll('.g img').forEach(im=>im.parentElement.onclick=()=>{lbimg.src=im.src;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');
+
+/* ---- AI concierge (scripted demo) ---- */
+const cp=document.getElementById('chatp'),cb=document.getElementById('cbody');
+document.getElementById('aiBtn').onclick=()=>{cp.classList.toggle('on');if(cp.classList.contains('on')&&!cb.dataset.init){cb.dataset.init=1;botSay("Namaste! 🙏 I'm the <b>Our Place</b> assistant. I can hold a table, share today's specials or give directions — in English or Telugu. <br><br>మీకు తెలుగులో కావాలంటే చెప్పండి!",["Book a table","Tonight's specials","Hours & directions","Veg options"]);}};
+document.getElementById('chatX').onclick=()=>cp.classList.remove('on');
+
+function add(html,cls){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;cb.appendChild(d);cb.scrollTop=cb.scrollHeight;return d}
+function quicks(arr){const w=document.createElement('div');w.className='qrs';arr.forEach(q=>{const b=document.createElement('button');b.className='qr';b.textContent=q;b.onclick=()=>{w.remove();userSay(q)};w.appendChild(b)});cb.appendChild(w);cb.scrollTop=cb.scrollHeight}
+function botSay(html,qs){const t=document.createElement('div');t.className='typing';t.innerHTML='<i></i><i></i><i></i>';cb.appendChild(t);cb.scrollTop=cb.scrollHeight;setTimeout(()=>{t.remove();add(html,'bot');if(qs)quicks(qs)},900+Math.random()*500)}
+function userSay(q){add(q,'user');route(q)}
+function route(q){
+  if(q==="Book a table"){botSay("Lovely! How many of you are coming tonight?",["Just 2","Family of 4","Big group 6+"]);}
+  else if(q==="Just 2"||q==="Family of 4"||q==="Big group 6+"){
+    const n=q==="Just 2"?"2":q==="Family of 4"?"4":"6+";
+    botSay("Done ✓ I'm holding a <b>"+(n==="6+"?"pergola for your group":n==="4"?"hut cabana for 4":"cozy table for 2")+"</b> tonight at 8:00 pm. You'll get a WhatsApp confirmation right away — reply R anytime to reschedule.<br><br><i>(Demo: the live assistant writes this straight into the restaurant's booking sheet and confirms on WhatsApp.)</i>",["Tonight's specials","Hours & directions"]);
+  }
+  else if(q==="Tonight's specials"){botSay("Tonight the fire's busy with:<br>• <b>Natu Kodi Fry</b> — ₹490<br>• <b>AP Fish Roast</b> — ₹530<br>• <b>Chicken Dum Biryani</b> — ₹400<br>• <b>Afghani Kabab</b> — ₹520<br><br>Shall I keep a hut ready so you can have them straight off the tandoor?",["Book a table","Veg options"]);}
+  else if(q==="Hours & directions"){botSay("We're open <b>every day</b>: 12–4:30 pm and 7–11 pm.<br><br>📍 Ashramam Road, Tadepalli — 2 minutes off <b>Kanakadurga Varadhi</b>. Free parking at the gate. Want the Google Maps pin on WhatsApp?",["Book a table","Tonight's specials"]);}
+  else if(q==="Veg options"){botSay("Plenty for the veg side of the table:<br>• <b>Crispy Corn</b> — ₹310<br>• <b>Paneer 555</b> — ₹360<br>• <b>Paneer Butter Masala</b> — ₹360<br>• <b>Methi Chaman</b> — ₹340<br>• <b>Veg Fried Rice</b> — ₹310<br>…plus a full veg tandoor &amp; curry range.",["Book a table","Tonight's specials"]);}
+}
+if(qp.has('chat'))document.getElementById('aiBtn').click();
+if(qp.has('probe')){addEventListener('load',()=>{const r=s=>{const e=document.querySelector(s);if(!e)return null;const b=e.getBoundingClientRect();return{l:Math.round(b.left),r:Math.round(b.right),w:Math.round(b.width)}};const p=document.createElement('pre');p.id='probe';p.textContent='PROBE'+JSON.stringify({iw:innerWidth,dw:document.documentElement.clientWidth,sw:document.documentElement.scrollWidth,bodyW:document.body.clientWidth,statbar:r('.statbar'),tag:r('.hero p.tag'),inner:r('.hero .inner'),lede:r('#experience .lede')});document.body.appendChild(p)})}
+</script>
+</body>
+</html>
